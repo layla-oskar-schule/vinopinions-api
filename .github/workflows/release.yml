@@ -62,8 +62,8 @@ jobs:
         with:
           node-version: ${{ vars.NODE_VERSION }}
 
-      - name: Install dev dependencies
-        run: yarn install --dev --immutable
+      - name: Install dependencies
+        run: yarn install --immutable
 
       - name: Check version
         id: check_version
